@@ -68,7 +68,7 @@ public class Song extends AudioElement implements Serializable{
         genreElement.appendChild(document.createTextNode(genre.getGenre()));
         song.appendChild(genreElement);
 		
-		parentElement.appendChild(song);
+		parentElement.appendChild(song); 
 		return;
 	}
 }
