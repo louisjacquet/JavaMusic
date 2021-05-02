@@ -4,7 +4,11 @@ L’application développée en Java permet de se connecter à un serveur, sur l
 
 # Projet fait par:
 Beranger Brieuc
+
 Guillaume Rémy
+
 Jacquet Louis
+
 Marry Augustin
+
 Ouedraogo Adams Romuald
