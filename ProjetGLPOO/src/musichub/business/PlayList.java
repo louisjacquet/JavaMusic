@@ -98,7 +98,7 @@ public class PlayList implements Serializable{
 			elementUUIDElement.appendChild(document.createTextNode(currentUUID.toString()));
 			elementsElement.appendChild(elementUUIDElement);
 		}
-		playlistElement.appendChild(elementsElement);
+		playlistElement.appendChild(elementsElement); 
 	}
 	
 }
