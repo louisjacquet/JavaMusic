@@ -8,4 +8,4 @@ public class ClientConnection
 		SimpleClient c1 = new SimpleClient();
 		c1.connect("localhost");
 	}
-}
+} 
