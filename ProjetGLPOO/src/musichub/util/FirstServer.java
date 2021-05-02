@@ -12,7 +12,7 @@ public class FirstServer extends AbstractServer
 			//the server socket is defined only by a port (its IP is localhost)
 			ss = new ServerSocket (6666);  
 			System.out.println("Server waiting for connection...");
-			while (true) {
+			while (true) { 
 				Socket socket = ss.accept();//establishes connection 
 				System.out.println("Connected as " + ip);	
 				// create a new thread to handle client socket	
