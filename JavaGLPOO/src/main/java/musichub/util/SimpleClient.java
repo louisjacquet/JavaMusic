@@ -36,14 +36,18 @@ public class SimpleClient {
 						output.writeObject(choice);
 					break;
 					case 't':
-					//album titles, ordered by date
+						/**
+						 * album titles, ordered by date
+						 */
 						System.out.println((String) input.readObject());
 						System.out.println((String) input.readObject());
 						choice = scan.nextLine();
 						output.writeObject(choice);
 					break;
 					case 'g':
-					//songs of an album, sorted by genre
+						/**
+						 * songs of an album, sorted by genre
+						 */
 						System.out.println((String) input.readObject());
 						System.out.println((String) input.readObject());
 						albumTitle = scan.nextLine();
@@ -59,7 +63,9 @@ public class SimpleClient {
 						output.writeObject(choice);
 					break;
 					case 'd':
-					//songs of an album
+						/**
+						 * songs of an album
+						 */
 						System.out.println((String) input.readObject());
 						System.out.println((String) input.readObject());
 						albumTitle = scan.nextLine();
@@ -75,7 +81,9 @@ public class SimpleClient {
 						output.writeObject(choice);
 					break;
 					case 'u':
-					//audiobooks ordered by author
+						/**
+						 * audiobooks ordered by author
+						 */
 						System.out.println((String) input.readObject());
 						System.out.println((String) input.readObject());
 						choice = scan.nextLine();
@@ -111,7 +119,9 @@ public class SimpleClient {
 						output.writeObject(choice);
 					break;
 					case 'a':
-					// add a new album
+						/**
+						 * add a new album
+						 */
 						System.out.println((String) input.readObject());
 						System.out.println((String) input.readObject());
 						choice = scan.nextLine();
@@ -135,7 +145,9 @@ public class SimpleClient {
 						output.writeObject(choice);
 					break;
 					case '+':
-					//add a song to an album:
+						/**
+						 * add a song to an album:
+						 */
 						System.out.println((String) input.readObject());
 						System.out.println((String) input.readObject());
 						while((int) input.readObject() == 0) {
@@ -158,7 +170,9 @@ public class SimpleClient {
 						output.writeObject(choice);
 					break;
 					case 'l':
-					// add a new audiobook
+						/**
+						 * add a new audiobook
+						 */
 						System.out.println((String) input.readObject());
 						System.out.println((String) input.readObject());
 						choice = scan.nextLine();
@@ -187,7 +201,9 @@ public class SimpleClient {
 						output.writeObject(choice);
 					break;
 					case 'p':
-					//create a new playlist from existing elements
+						/**
+						 * create a new playlist from existing elements
+						 */
 						System.out.println((String) input.readObject());
 						System.out.println((String) input.readObject());
 						while((int) input.readObject() == 0) {
@@ -216,7 +232,9 @@ public class SimpleClient {
 						output.writeObject(choice);
 					break;
 					case '-':
-					//delete a playlist
+						/**
+						 * delete a playlist
+						 */
 						System.out.println((String) input.readObject());
 						while((int) input.readObject() == 0) {
 							System.out.println((String) input.readObject());
@@ -229,7 +247,9 @@ public class SimpleClient {
 						output.writeObject(choice);
 					break;
 					case 's':
-					//save elements, albums, playlists
+						/**
+						 * save elements, albums, playlists
+						 */
 						System.out.println((String) input.readObject());
 						System.out.println((String) input.readObject());
 						choice = scan.nextLine();

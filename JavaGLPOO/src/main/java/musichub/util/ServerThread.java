@@ -43,14 +43,18 @@ public class ServerThread extends Thread {
 						text1 = (String)input.readObject();
 					break;
 					case 't':
-					//album titles, ordered by date
+					/**
+					 * album titles, ordered by date
+					*/
 						System.out.println(text1);
 						output.writeObject(theHub.getAlbumsTitlesSortedByDate());
 						output.writeObject(text2);
 						text1 = (String)input.readObject();
 					break;
 					case 'g':
-					//songs of an album, sorted by genre
+						/**
+						 * songs of an album, sorted by genre
+						 */
 						System.out.println(text1);
 						output.writeObject("Songs of an album sorted by genre will be displayed; enter the album name, available albums are:");
 						output.writeObject(theHub.getAlbumsTitlesSortedByDate());
@@ -67,7 +71,9 @@ public class ServerThread extends Thread {
 						text1 = (String)input.readObject();
 					break;
 					case 'd':
-					//songs of an album
+					/**
+					 * songs of an album
+					 */
 						System.out.println(text1);
 						output.writeObject("Songs of an album will be displayed; enter the album name, available albums are:");
 						output.writeObject(theHub.getAlbumsTitlesSortedByDate());
@@ -84,14 +90,18 @@ public class ServerThread extends Thread {
 						text1 = (String)input.readObject();
 					break;
 					case 'u':
-					//audiobooks ordered by author
+						/**
+						 * audiobooks ordered by author
+						 */
 						System.out.println(text1);
 						output.writeObject(theHub.getAudiobooksTitlesSortedByAuthor());
 						output.writeObject(text2);
 						text1 = (String)input.readObject();
 					break;
 					case 'c':
-					// add a new song
+						/**
+						 * add a new song
+						 */
 						System.out.println(text1);
 						output.writeObject("Enter a new song: ");
 						output.writeObject("Song title: ");
@@ -118,7 +128,9 @@ public class ServerThread extends Thread {
 						text1 = (String)input.readObject();
 					break;
 					case 'a':
-					// add a new album
+						/**
+						 * add a new album
+						 */
 						System.out.println(text1);
 						output.writeObject("Enter a new album: ");
 						output.writeObject("Album title: ");
@@ -143,7 +155,9 @@ public class ServerThread extends Thread {
 						text1 = (String)input.readObject();						
 					break;
 					case '+':
-					//add a song to an album:
+						/**
+						 * add a song to an album:
+						 */
 						System.out.println(text1);
 						output.writeObject("Add an existing song to an existing album");
 						output.writeObject("Type the name of the song you wish to add. Available songs: ");
@@ -182,7 +196,9 @@ public class ServerThread extends Thread {
 						text1 = (String)input.readObject();
 					break;
 					case 'l':
-					// add a new audiobook
+						/**
+						 * add a new audiobook
+						 */
 						System.out.println(text1);
 						output.writeObject("Enter a new audiobook: ");
 						output.writeObject("AudioBook title: ");
@@ -210,7 +226,9 @@ public class ServerThread extends Thread {
 						text1 = (String)input.readObject();
 					break;
 					case 'p':
-					//create a new playlist from existing elements
+						/**
+						 * create a new playlist from existing elements
+						 */
 						System.out.println(text1);
 						output.writeObject("Add an existing song or audiobook to a new playlist");
 						output.writeObject("Existing playlists:");
@@ -257,7 +275,9 @@ public class ServerThread extends Thread {
 						text1 = (String)input.readObject();
 					break;
 					case '-':
-					//delete a playlist
+						/**
+						 * delete a playlist
+						 */
 						System.out.println(text1);
 						output.writeObject("Delete an existing playlist. Available playlists:");
 						Iterator<PlayList> itp = theHub.playlists();
@@ -279,7 +299,9 @@ public class ServerThread extends Thread {
 						text1 = (String)input.readObject();
 					break;
 					case 's':
-					//save elements, albums, playlists
+						/**
+						 * save elements, albums, playlists
+						 */
 						System.out.println(text1);
 						theHub.saveElements();
 						theHub.saveAlbums();
